@@ -33,6 +33,8 @@ Pour fonctionner, l'application envoie vos identifiants à **votre serveur** et 
 
 ### 3.4 Achats (version Premium)
 Les achats et abonnements sont traités par **Google Play**. Nous ne recevons ni vos données bancaires ni vos données de paiement ; l'application interroge Google Play pour savoir si un abonnement ou un achat à vie est actif.
+### 3.4 bis Essai gratuit de 7 jours
+Pour offrir un essai sans carte bancaire et empêcher qu'il soit relancé par une réinstallation, l'application calcule une **empreinte irréversible (hash SHA-256)** de l'identifiant de votre appareil et enregistre dans Firebase (Firestore) cette empreinte et la **date de début d'essai**. Nous ne pouvons pas remonter à votre identité ni à l'identifiant d'origine. Base légale : intérêt légitime (prévention des abus). Conservation : tant que l'application est proposée.
 
 ### 3.5 Statistiques d'usage et rapports de plantage (uniquement avec votre accord)
 Si vous l'acceptez (choix proposé au premier lancement, modifiable dans **Réglages → Statistiques et rapports de plantage**), l'application active **Firebase Analytics** et **Firebase Crashlytics** (Google) : identifiant d'installation Firebase, modèle d'appareil, version d'Android et de l'application, événements d'usage anonymes et traces techniques en cas de plantage. Elle **n'utilise pas l'identifiant publicitaire** et **ne contient aucune publicité**. Sans votre accord, ces outils sont désactivés.

@@ -34,6 +34,8 @@ To work, the app sends your credentials to **your server** and retrieves channel
 
 ### 3.4 Purchases (Premium)
 Purchases and subscriptions are processed by **Google Play**. We receive neither your payment details nor your banking data; the app asks Google Play whether a subscription or lifetime purchase is active.
+### 3.4 bis 7-day free trial
+To offer a trial without a bank card and prevent it from being restarted by reinstalling, the app computes an **irreversible hash (SHA-256)** of your device identifier and stores in Firebase (Firestore) this hash and the **trial start date**. We cannot trace it back to your identity or to the original identifier. Legal basis: legitimate interest (abuse prevention). Retention: as long as the app is offered.
 
 ### 3.5 Usage statistics and crash reports (only with your consent)
 If you accept (asked at first launch, changeable in **Settings → Statistics and crash reports**), the app enables **Firebase Analytics** and **Firebase Crashlytics** (Google): Firebase installation ID, device model, Android and app versions, anonymous usage events and technical traces when the app crashes. It **does not use the advertising ID** and **contains no advertising**. Without your consent these tools are disabled.
