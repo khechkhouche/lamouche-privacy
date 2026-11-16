@@ -49,4 +49,4 @@ Toute modification de cette politique sera publiée sur cette même page avec un
 
 Pour toute question concernant cette politique de confidentialité :
 
-**Email :**khechkhouche@gmail.com
+**Email :**mkbizzzpro@gmail.com
